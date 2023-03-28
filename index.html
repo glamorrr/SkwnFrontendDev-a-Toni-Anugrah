@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dekoor - The kind of furniture you have been looking for</title>
+    <meta
+      name="description"
+      content="Welcome to Dekoor, your one-stop-shop for stylish and affordable furniture. Discover our range of modern, elegant and functional pieces that will elevate your home decor."
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <a href="#" class="nav__container-logo"
+        ><img class="nav__logo" src="assets/logo.svg" alt="logo" width="110" height="33"
+      /></a>
+      <ul class="desktop-nav">
+        <li class="desktop-nav__link"><a href="#">About us</a></li>
+        <li class="desktop-nav__link">
+          Furniture <img src="assets/icons/chevron-down.svg" alt="" />
+        </li>
+        <li class="desktop-nav__link"><a href="#">Partnership</a></li>
+        <li class="desktop-nav__link"><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <button class="nav__cta-btn nav__cta-btn--primary">Signup</button>
+        <button class="nav__cta-btn nav__cta-btn--tertiary">
+          <img src="assets/icons/shopping-bag.svg" alt="" />
+        </button>
+      </div>
+      <button class="nav__btn">
+        <img
+          class="nav__icon-menu"
+          src="assets/icons/menu.svg"
+          alt="menu icon"
+          width="24"
+          height="24"
+          data-js="menu-button"
+        />
+      </button>
+      <ul class="mobile-nav" data-js="mobile-nav">
+        <li class="mobile-nav__link"><a href="#">About us</a></li>
+        <li class="mobile-nav__link">Furniture</li>
+        <li class="mobile-nav__link mobile-nav__link--child"><a href="#">Sofa</a></li>
+        <li class="mobile-nav__link mobile-nav__link--child"><a href="#">Chair</a></li>
+        <li class="mobile-nav__link mobile-nav__link--child"><a href="#">Bed</a></li>
+        <li class="mobile-nav__link"><a href="#">Partnership</a></li>
+        <li class="mobile-nav__link"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero__article">
+          <h1 class="hero__title">
+            The kind of <span class="hero__hightlight">furniture</span> you have been looking for
+          </h1>
+          <div class="hero__cta">
+            <button class="hero__btn hero__btn--primary">
+              <img class="hero__icon" src="assets/icons/search.svg" alt="" width="24" height="24" />
+              SEARCH CATALOG
+            </button>
+            <button class="hero__btn hero__btn--secondary">
+              <img class="hero__icon" src="assets/icons/play.svg" alt="" width="24" height="24" />
+              WATCH VIDEOS
+            </button>
+          </div>
+        </div>
+        <div class="hero__with-backdrop">
+          <!-- disini nanti kasih bg sofa -->
+          <h2 class="hero__subtitle">HIGHLIGHTED PRODUCT</h2>
+          <span class="hero__price">$329</span>
+          <p class="hero__product">Pösht Sofa</p>
+          <button class="hero__btn-tertiary">
+            VIEW DETAILS <img src="assets/icons/chevron-right.svg" width="16" height="16" alt="" />
+          </button>
+        </div>
+      </section>
+      <!-- wcu = why choose us -->
+      <section class="wcu">
+        <h2 class="wcu__title">WHY CHOOSE US?</h2>
+        <p class="wcu__subtitle">We care about details and the quality of our products</p>
+        <div class="wcu__list">
+          <div class="wcu__item">
+            <div class="wcu__container-icon">
+              <img
+                class="wcu__icon"
+                src="assets/icons/search-white.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+            </div>
+            <p class="wcu__item-info">MANUFACTURED WITH QUALITY MATERIALS</p>
+          </div>
+          <div class="wcu__item">
+            <div class="wcu__container-icon"><span class="wcu__icon">5</span></div>
+            <p class="wcu__item-info">5 YEARS OF WARRANTY FOR EACH PRODUCT</p>
+          </div>
+          <div class="wcu__item">
+            <div class="wcu__container-icon">
+              <img class="wcu__icon" src="assets/icons/work-outline.svg" alt="" />
+            </div>
+            <p class="wcu__item-info">20 YEARS OF EXPERTISE</p>
+          </div>
+        </div>
+      </section>
+      <div class="partner-container">
+        <section class="partner">
+          <h2 class="partner__title"><span class="partner__big">25+</span> PARTNERED BRANDS</h2>
+          <div class="partner__brands">
+            <img src="assets/gusto.svg" alt="gusto company" class="partner__company" />
+            <img src="assets/stripe.svg" alt="stripe company" class="partner__company" />
+            <img src="assets/treehouse.svg" alt="treehouse company" class="partner__company" />
+            <img src="assets/upwork.svg" alt="upwork company" class="partner__company" />
+          </div>
+        </section>
+      </div>
+      <section class="categories">
+        <div class="categories__article">
+          <h2 class="categories__title">Categories</h2>
+          <p class="categories__subtitle">Furniture Sets Recommendations</p>
+          <div class="categories__list">
+            <div class="categories__item" data-js="category-item">
+              <h3 class="categories__name" data-js="category-name">Bedroom</h3>
+              <p class="categories__description" data-js="category-description">
+                A space where you can relax and unwind, with a soothing color palette and soft
+                lighting to create a calm atmosphere
+              </p>
+            </div>
+            <div class="categories__item" data-js="category-item">
+              <h3 class="categories__name" data-js="category-name">Living Room</h3>
+              <p class="categories__description" data-js="category-description">
+                Enjoy a great living room aesthetics with your family Designs created for increased
+                comfortability
+              </p>
+            </div>
+            <div class="categories__item" data-js="category-item">
+              <h3 class="categories__name" data-js="category-name">Home Office</h3>
+              <p class="categories__description" data-js="category-description">
+                A spacious desk with ample storage for your work supplies, and good lighting to
+                minimize eye strain and enhance productivity
+              </p>
+            </div>
+            <div class="categories__item" data-js="category-item">
+              <h3 class="categories__name" data-js="category-name">Gaming Room</h3>
+              <p class="categories__description" data-js="category-description">
+                A space designed to provide an immersive and exciting gaming experience
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="categories__images">
+          <img src="assets/category-image-1.png" alt="living room" class="categories__image" />
+          <img src="assets/category-image-2.png" alt="living room" class="categories__image" />
+          <img src="assets/category-image-3.png" alt="home office" class="categories__image" />
+        </div>
+      </section>
+      <section class="products">
+        <div class="products__header">
+          <div class="products__article">
+            <h2 class="products__title">OUR PRODUCTS</h2>
+            <p class="products__subtitle">This month’s best seller</p>
+          </div>
+          <button class="products__btn">SEE MORE</button>
+        </div>
+        <div class="products__container-list">
+          <div class="products__list" data-js="products-list"></div>
+          <div class="products__navigation">
+            <button class="products__icon" data-js="product-prev-btn">
+              <img src="assets/icons/arrow-back.svg" alt="" />
+            </button>
+            <button class="products__icon" data-js="product-next-btn">
+              <img src="assets/icons/arrow-forward.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="deals-container">
+        <section class="deals">
+          <h2 class="deals__title">LIMITED DEALS</h2>
+          <p class="deals__subtitle">Become a member and get 10% off of your first purchase</p>
+          <form class="deals__form" data-js="form">
+            <input type="text" class="deals__input" placeholder="Enter your email here" />
+            <button type="submit" class="deals__submit">
+              <img src="assets/icons/mail.svg" class="deals__icon" alt="" />
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <img class="footer__logo" src="assets/logo.svg" alt="logo" />
+        <p class="footer__description">
+          Dekoor is a furniture company created to fulfill the needs of family with aesthetic
+          feeling in their furniture. Always pay attention to details and give clear communication
+          for the customers. Priority of our design is comfortability.
+        </p>
+        <p class="footer__copyright">© Copyright 2022 Dekoor</p>
+      </div>
+      <div class="footer__navigation">
+        <div class="footer__container-links">
+          <h2 class="footer__title">Support</h2>
+          <ul class="footer__links">
+            <li class="footer__link"><a href="#">FAQ</a></li>
+            <li class="footer__link"><a href="#">Shipping & Returns</a></li>
+            <li class="footer__link"><a href="#">Care guide</a></li>
+            <li class="footer__link"><a href="#">Redeem warranty</a></li>
+          </ul>
+        </div>
+        <div class="footer__container-links">
+          <h2 class="footer__title">Social Media</h2>
+          <ul class="footer__links">
+            <li class="footer__link"><a href="#">Instagram</a></li>
+            <li class="footer__link"><a href="#">Facebook</a></li>
+            <li class="footer__link"><a href="#">Twitter</a></li>
+            <li class="footer__link"><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+        <div class="footer__container-links">
+          <h2 class="footer__title">About Us</h2>
+          <ul class="footer__links">
+            <li class="footer__link"><a href="#">Our story</a></li>
+            <li class="footer__link"><a href="#">Designer</a></li>
+            <li class="footer__link"><a href="#">Craftmanship</a></li>
+            <li class="footer__link"><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="app.js"></script>
+</html>
